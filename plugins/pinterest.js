@@ -1,7 +1,7 @@
 let fetch = require('node-fetch')
 let handler = async (m, { conn, text, usedPrefix, command }) => {
   if (!text) throw `uhm. cari apa?\n\ncontoh:\n${usedPrefix + command} logo`
-  m.reply(wait)
+  await m.reply('subscribe yaa...\n youtube.com/c/KYURA')
   let res = await fetch(`https://api.lolhuman.xyz/api/pinterest?apikey=${lolkey}&query=${text}`)
   if (!res.ok) throw await `${res.status} ${res.statusText}`
   let json = await res.json()
