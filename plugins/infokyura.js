@@ -21,7 +21,7 @@ conn.reply(m.chat, `
 `.trim(), m)
 }
 
-handler.help = ['infokyura']
+handler.help = ['infoowner']
 handler.tags = ['main']
 handler.command = /^(infoowner)$/i
 
