@@ -236,7 +236,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
           "title": `${ucapan()}, ${name}`.trim(),
           "description": `
 ┏━━〔 Status 〕━⬣
-┃⬡ Aktif selama ${uptime}
+┃⬡ Aktif selama _${uptime}_
 ┃⬡ Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
 ┃⬡ *${Object.keys(global.db.data.users).length}* Pengguna
 ┃⬡ *${totaljadibot.length}* Jadibot
@@ -246,13 +246,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 ┃
 ┃⬡ Group Official 1 :
 ┃    ${gc1}
-┃
-┃⬡ Group Official 2 :
-┃    ${gc2}
-┃
-┃⬡ Group Official 3 :
-┃    ${gc3}
-┃
 ┃
 ┗━━━━━━━━⬣`.trim(),
           "buttonText": "Klik Disini",
