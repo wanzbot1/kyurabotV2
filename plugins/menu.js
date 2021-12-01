@@ -8,28 +8,31 @@ const chats = conn.chats.all()
 const groups = chats.filter(v => v.jid.endsWith('g.us'))
 const defaultMenu = {
   before: `
-┏━━〔 ${namabot} 〕━⬣
-┃⬡ Hai, %name!
+┏━━〔 *KyuraBot [2]* 〕━⬣
+┃⬡ Hai, *%name!*
 ┃
-┃⬡ Tersisa *%limit Limit*
-┃⬡ Role *%role*
-┃⬡ Level *%level (%exp / %maxexp)* 
-┃⬡ [%xp4levelup]
-┃⬡ %totalexp XP secara Total
+┃⬡ *Tersisa* _%limit Limit_
+┃⬡ *Role* _%role_
+┃⬡ *Level* _%level (%exp / %maxexp)_
+┃⬡ _[%xp4levelup]_
+┃⬡ _%totalexp_ *XP secara Total*
 ┃ 
-┃⬡ Hari : *%week %weton* 
-┃⬡ Tanggal : *%date*
-┃⬡ Tanggal Islam : 
-┃⬡ *%dateIslamic*
-┃⬡ Waktu: *%time*
+┃⬡ *Hari* : _%week %weton_ 
+┃⬡ *Tanggal* : _%date_
+┃⬡ *Tanggal Islam* : 
+┃⬡ _%dateIslamic_
+┃⬡ *Waktu* : _%time_
 ┃
-┃⬡ Uptime: *%uptime (%muptime)*
-┃⬡ Database: %rtotalreg dari %totalreg
-┃⬡ Github:
-┃⬡ Github.com/RTeam1
-┃
+┃⬡ Chat Owner ✉️
+┃⬡ klo mw add bot ke grup ☺ !
+┃⬡ *Uptime* : _%uptime (%muptime)_
+┃⬡ *Database* : _%rtotalreg dari %totalreg_
+┃⬡ *Github* : 
+┃   bit.ly/githubkyura
+┃⬡ *Youtube* : 
+┃   bit.ly/youtubekyura
 ┗━━━━━━⬣`.trimStart(),
-  header: '┏━━〔 %category 〕━⬣',
+  header: '┏━━〔 *%category* 〕━⬣',
   body: '┃⬡%cmd %islimit %isPremium',
   footer: '┗━━⬣\n',
   after: `
