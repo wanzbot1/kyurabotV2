@@ -1,32 +1,34 @@
-let handler = async (m, { conn }) => {
-	conn.reply(m.chat, `╠═〘 PEMBAYARAN 〙 ═
-╠═ Untuk Pembayaran Via OVO
-╠➥ Ke nomer ini
-║➥ 089677763976
-║
-╠═〘 Fitur 〙 ═
-║
-╠➥ *FITUR DOWNLOADER 500++
-║     YouTube, Twitter, 
-║     Tiktok, Instagram, dll.
-║    *FITUR STIKER*
-╠➥ *FITUR ADMIN*
-║    *KICK ORANG*
-║    *JADIIN ADMIN*
-╠➥ *FITUR ISLAM*
-║   *QURAN*
-║   *CEK JADWAL SHALAT*
-╠➥ *INTERNET*
-║   *BRAINLY*
-║   *GOOGLE*
-╠➥ *DAN 200 LEBIH*
-║   *FITUR LAINNYA*
-║ 
-╠═ ©2021 Rpg wabot-aq
-╠═ Scrip original by Nurutomo
-╠═〘 ${namabot} 〙 ═`.trim(), m)
-}
-
-handler.command = /^viaovo$/i
-
-module.exports = handler
+let fetch = require('node-fetch')
+	let handler = async (m, { conn }) => conn.sendButtonLoc(m.chat, await (await fetch(fla + 'donasi')).buffer(), `
+╭─˗ˏˋ *Pembayaran* ´ˎ˗
+│ ✎ Untuk Pembayaran Via OVO
+│ ✎ Ke Nomor = 081998903280
+│ ✎ Bila Perlu hubungi owner 
+│ 
+╭─˗ˏˋ *Fitur Bot* ´ˎ˗
+│
+│ ✎ *FITUR DOWNLOADER 500++
+│    YouTube, Twitter, 
+│     Tiktok, Instagram, dll.
+│    *FITUR STIKER*
+│ ✎ *FITUR ADMIN*
+│    *KICK ORANG*
+│    *JADIIN ADMIN*
+│ ✎ *FITUR ISLAM*
+│   *QURAN*
+│   *CEK JADWAL SHALAT*
+│ ✎ *INTERNET*
+│   *BRAINLY*
+│   *GOOGLE*
+│ ✎ *DAN 200 LEBIH*
+│   *FITUR LAINNYA*
+│ 
+│ ✎ ©2021 Kyura Bot
+│ ✎ Script original by Nurutomo
+╰‿‿˗ˏˋ *${namabot}* ´ˎ˗
+	`.trim(), footer, 'Owner', '.owner')
+	handler.help = ['donasi']
+	handler.tags = ['info']
+	handler.command = /^viaovo$/i
+	
+	module.exports = handler
