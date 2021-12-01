@@ -4,6 +4,7 @@ let poin = 500
 let handler = async (m, { conn, usedPrefix }) => {
     conn.tekateki = conn.tekateki ? conn.tekateki : {}
     let id = m.chat
+    await m.reply('subscribe yaa...\n youtube.com/c/KYURA')
     if (id in conn.tekateki) {
         conn.reply(m.chat, 'Masih ada soal belum terjawab di chat ini', conn.tekateki[id][0])
         throw false
