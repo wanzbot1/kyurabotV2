@@ -14,7 +14,7 @@ let handler = async (m, { conn }) => {
 │
 │ ✎ ©2021 KyuraBot
 │ ✎ Script original by Nurutomo
-╰‿‿‿‿‿‿‿‿〘 ${namabot} 〙 ═`.trim(), footer, 'Dana', '#viadana', 'OVO', '#viaovo', 'Pulsa', '#viapulsa', m)
+╰‿‿˗ˏˋ *${namabot}* ´ˎ˗ `.trim(), footer, 'Dana', '#viadana', 'OVO', '#viaovo', 'Pulsa', '#viapulsa', m)
 }
 
 handler.command = /^sewa(bot)?$/i
