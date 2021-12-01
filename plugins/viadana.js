@@ -1,5 +1,6 @@
-let handler = async (m, { conn }) => {
-	conn.reply(m.chat, `╭─˗ˏˋ *Pembayaran* ´ˎ˗
+let fetch = require('node-fetch')
+	let handler = async (m, { conn }) => conn.sendButtonLoc(m.chat, await (await fetch(fla + 'donasi')).buffer(), `
+╭─˗ˏˋ *Pembayaran* ´ˎ˗
 │ ✎ Untuk Pembayaran Via DANA
 │ ✎ Ke Nomor = 081998903280
 │ ✎ Bila Perlu hubungi owner 
@@ -24,9 +25,10 @@ let handler = async (m, { conn }) => {
 │ 
 │ ✎ ©2021 Kyura Bot
 │ ✎ Script original by Nurutomo
-╰‿‿˗ˏˋ *${namabot}* ´ˎ˗〘 ${namabot} 〙 ═`.trim(), m)
-}
-
-handler.command = /^viadana$/i
-
-module.exports = handler
+╰‿‿˗ˏˋ *${namabot}* ´ˎ˗
+	`.trim(), footer, 'Owner', '.owner')
+	handler.help = ['donasi']
+	handler.tags = ['info']
+	handler.command = /^viadana$/i
+	
+	module.exports = handler
