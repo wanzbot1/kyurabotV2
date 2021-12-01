@@ -1,6 +1,6 @@
 let fetch = require('node-fetch')
 let handler = async (m, { conn, usedPrefix, command }) => {
-m.reply(wait)
+await m.reply('subscribe yaa...\n youtube.com/c/KYURA')
   let res = await fetch('https://api.waifu.pics/sfw/waifu')
   if (!res.ok) throw await res.text()
   let json = await res.json()
