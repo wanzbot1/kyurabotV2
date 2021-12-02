@@ -28,21 +28,21 @@ handler.all = async function (m, { isBlocked }) {
 
     // ketika ada yang invite/kirim link grup di chat pribadi
     if ((m.mtype === 'groupInviteMessage' || m.text.startsWith('https://chat') || m.text.startsWith('Buka tautan ini')) && !m.isBaileys && !m.isGroup && !m.fromMe && !m.isOwner) {
-        this.send2ButtonLoc(m.chat, await (await fetch(fla + 'sewa bot')).buffer(), `╠═〘 Beli Bot 〙 ═
-╠➥ *1 Bulan*  : *Rp 10.000*
-╠➥ *Permanen* : *Rp 25.000*
-╠➥ *Premium*  : *Rp 10.000*
-╠➥ *Sc Bot*   : *Masih Beta*
-║
-╠═〘 *PEMBAYARAN* 〙 ═
-╠➥ _Gopay, Dana, Dan Pulsa_
-║
-╠➥Tertarik Untuk Beli Bot Ini?
-╠➥Ketuk Tombol Di Bawah Ya
-║
-╠═ ©2021 KyuraBOT
-╠═ Script original by Nurutomo
-╠═〘 ${namabot} 〙 ═`.trim(), footer, 'Dana', '#viadana', 'GoPay', '#viagopay', m)
+        this.send2ButtonLoc(m.chat, await (await fetch(fla + 'sewa bot')).buffer(), `╭─˗ˏˋ *Beli Bot* ´ˎ˗
+│ ✎ *1 Bulan* :      *Rp 15000*
+│ ✎ *Permanen* : *Rp 25000*
+│ ✎ *Premium* :   *Rp 10000*
+│ ✎ *Sc Bot* :        *Masih Beta*
+│ 
+╭─˗ˏˋ *Pembayaran* ´ˎ˗
+│ ✎ Gopay, Dana, Dan Pulsa
+│ 
+│ ✎ Tertarik Untuk Beli Bot Ini?
+│ ✎ Ketuk Tombol Di Bawah Ya
+│
+│ ✎ ©2021 KyuraBot
+│ ✎ Script original by Nurutomo
+╰‿‿˗ˏˋ *${namabot}* ´ˎ˗ `.trim(), footer, 'Dana', '#viadana', 'GoPay', '#viagopay', m)
 }
 
     // salam
