@@ -10,48 +10,31 @@ let handler  = async (m, { conn, usedPrefix }) => {
   //await m.reply('wait Kakak!!')
   let neww = Math.round(performance.now())
   conn.reply(m.chat, `
-═〘 Rules ${namabot} 〙═
-
-➥ Mohon untuk tidak Spam Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi Pengguna Bot yang Spam
-
-➥ Mohon untuk tidak Menelpon Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi orang yang nelpon Bot
-
-➥ Kami tidak bertanggung jawab atas penyalahgunaan bot
-
-➥ Kami tidak bertanggung jawab atas kebocoran data pribadi anda
-
-
-➥ ${namabot} Versi ${package.version}
-➥ *HomePage:* ${(package.homepage ? package.homepage.url || package.homepage : '[unknown github url]')}
-➥ *Issue:* ${package.bugs.url}
-➥ *Ping:* ${neww - old} *ms*
-➥ *Total user:* ${totalreg} *user*
-➥ *Uptime:* ${uptime}
-
-═ 〘 DONASI 〙 ═
-➥ Pulsa : 089677763976
-➥ Dana & OVO: 089677763976
-
-
-➥ Request? ${package.bugs.url}
-
-Official Grup :
-
-Grup 1 :
-${gc1}
-
-Grup 2 :
-${gc2}
-
-Grup 3 :
-${gc3}
-
-
- ©2021 ${namabot}
- Script original by Nurutomo
- 
- 
-═〘 ${namabot} 〙 ═
+╭─˗ˏˋ Rules ${namabot}  ´ˎ˗
+│
+│✎ *Mohon untuk tidak Spam Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi Pengguna Bot yang Spam*
+│
+│✎ *Mohon untuk tidak Menelpon Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi orang yang nelpon Bot*
+│
+│✎ *Kami tidak bertanggung jawab atas penyalahgunaan bot*
+│
+│✎ *Kami tidak bertanggung jawab atas kebocoran data pribadi anda*
+│
+│
+│✎ *Ping:* ${neww - old} *ms*
+│✎ *Total user:* ${totalreg} *user*
+│✎ *Uptime:* ${uptime}
+│
+╭─˗ˏˋ *Donasi*  ´ˎ˗
+│✎ Pulsa : 089677763976
+│✎ Dana & OVO: 089677763976
+│
+│✎Official Grup :
+│${gc1}
+│
+│©2021 ${namabot}
+│ Script original by Nurutomo
+╰‿‿‿‿‿${namabot}‿‿‿‿‿‿ 
 `.trim(), m)
 }
 
