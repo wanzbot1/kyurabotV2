@@ -280,10 +280,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "title": "[📈] XP",
                   "description": "XP Dan Level",
                   "rowId": ".? xp"
-                },  {
-                  "title": "[🔞] NSFW",
-                  "description": "Menu Bokep",
-                  "rowId": ".? nsfw"
                 }, {
                   "title": "[🖼️] Random Image",
                   "description": "Menu Foto Random",
