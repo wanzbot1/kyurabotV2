@@ -229,14 +229,6 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       }
       setting.anon = isEnable
       break
-    case 'onsfw':
-      isAll = true
-      if (!isOwner) {
-        global.dfail('owner', m, conn)
-        throw false
-      }
-      opts['nsfw'] = isEnable
-      break
     case 'jadibot':
       isAll = true
       if (!isOwner) {
@@ -254,22 +246,23 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       break
     default:
       if (!/[01]/.test(command)) throw `
-┌〔 Daftar Opsi 〕${isOwner ? '\n├ anon\n├ antispam\n├ antitroli\n├ autoread\n├ backup\n├ clear\n├ grouponly\n├ jadibot\n├ nsfw\n├ public\n├ mycontact' : ''}
-├ antilink
-├ autolevelup
-├ rpg
-├ delete
-├ detect
-├ viewonce
-├ antibadword
-├ document
-├ stiker
-├ simi
-├ welcome
-└────
-contoh:
+╭─˗ˏˋ *Daftar Opsi* ´ˎ˗〕${isOwner ? '\n│✎ anon\n│✎ antispam\n│✎ antitroli\n│✎ autoread\n│✎ backup\n│✎ clear\n│✎ grouponly\n│✎ jadibot\n│✎ public\n│✎ mycontact' : ''}
+│✎ antilink
+│✎ autolevelup
+│✎ rpg
+│✎ delete
+│✎ detect
+│✎ viewonce
+│✎ antibadword
+│✎ document
+│✎ stiker
+│✎ simi
+│✎ welcome
+╰‿‿‿‿‿‿
+*Contoh Penggunaan :*
+
 ${usedPrefix}on welcome
-${usedPrefix}off welcome
+${usedPrefix}off welcome 
 `.trim()
       throw false
   }
