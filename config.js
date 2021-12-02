@@ -28,6 +28,7 @@ global.APIs = { // API Prefix
   dhnjing: 'https://dhnjing.xyz',
   zeks: 'https://api.zeks.me',
   pencarikode: 'https://pencarikode.xyz',
+  bg: 'http://bochil.ddns.net',
   LeysCoder: 'https://leyscoders-api.herokuapp.com'
 }
 global.APIKeys = { // APIKey Here
