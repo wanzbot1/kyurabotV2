@@ -9,8 +9,8 @@ handler.before = async (m) => {
         let res = await fetch(global.API('bg', '/simi', { pesan: text }))
         if (!res.ok) return m.reply(eror)
         let json = await res.json()
-        if (json.result == 'Aku tidak mengerti apa yang kamu katakan.Tolong ajari aku.') await m.reply('siminya blom diajarin, ajarin di https://simsimi.com/teach')
-        else await m.reply(`*Simi:* ${json.result}`)
+        if (json.result.jawab == 'Aku tidak mengerti apa yang kamu katakan.Tolong ajari aku.') await m.reply('siminya blom diajarin, ajarin di https://simsimi.com/teach')
+        else await m.reply(`*Simi:* ${json.result.jawab}`)
         return !0
     }
     return true
