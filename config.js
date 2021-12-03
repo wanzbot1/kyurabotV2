@@ -14,7 +14,7 @@
 gc1 = 'bit.ly/officialgrupkanaobot'
 gc2 = ''
 gc3 = ''
-global.linkGC = ['bit.ly/officialgrupkyurabot'] // ganti jadi group lu
+global.linkGC = ['bit.ly/officialgrupkanaobot'] // ganti jadi group lu
 global.owner = ['6281998903280'] // Put your number here //owner eval
 global.kontak = ['6281998903280'] //Ketika ada yang ngetik #owner
 global.mods = ['6281998903280'] // Want some help?
