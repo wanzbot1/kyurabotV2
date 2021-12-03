@@ -8,7 +8,7 @@ conn.reply(m.chat, `
 │    Status : gatau mw isi apa anj
 │    Suka : Jepang, Coding (dikit), B.Inggris
 │ ✎ _Official Grup_ :
-│    bit.ly/officialgrupkyurabot
+│    bit.ly/officialgrupkanaobot
 │ ✎ _Instagram_ :
 │    bit.ly/instagramkyura
 │ ✎ _YouTube_ : 
