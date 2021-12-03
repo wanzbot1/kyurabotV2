@@ -8,33 +8,36 @@ const chats = conn.chats.all()
 const groups = chats.filter(v => v.jid.endsWith('g.us'))
 const defaultMenu = {
   before: `
-┏━━〔 *KyuraBot [2]* 〕━⬣
-┃⬡ Hai, *%name!*
-┃
-┃⬡ *Tersisa* _%limit Limit_
-┃⬡ *Role* _%role_
-┃⬡ *Level* _%level (%exp / %maxexp)_
-┃⬡ _[%xp4levelup]_
-┃⬡ _%totalexp_ *XP secara Total*
-┃ 
-┃⬡ *Hari* : _%week %weton_ 
-┃⬡ *Tanggal* : _%date_
-┃⬡ *Tanggal Islam* : 
-┃⬡ _%dateIslamic_
-┃⬡ *Waktu* : _%time_
-┃
-┃⬡ Chat Owner ✉️
-┃⬡ klo mw add bot ke grup ☺ !
-┃⬡ *Uptime* : _%uptime (%muptime)_
-┃⬡ *Database* : _%rtotalreg dari %totalreg_
-┃⬡ *Github* : 
-┃   bit.ly/githubkyura
-┃⬡ *Youtube* : 
-┃   bit.ly/youtubekyura
-┗━━━━━━⬣`.trimStart(),
-  header: '┏━━〔 *%category* 〕━⬣',
-  body: '┃⬡%cmd %islimit %isPremium',
-  footer: '┗━━⬣\n',
+╭══◈›ꪶ ཻུ۪۪ꦽꦼ̷⸙▁▂×̐̈̐̈͜×̐̈▂▁ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹◈══╮
+╟─┄┅╼━━❰❬｢*KyuraBot [2]*｣❭❱━━╾┅┄──╢
+╰══◈›ꪶ ཻུ۪۪ꦽꦼ̷⸙▁▂×̐̈̐̈͜×̐̈▂▁ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹◈══╯
+╭•͙✩̣̣̣̣ Hai, *%name!*┄─✩̣̣̣̣
+┷━━━━━━━━━━━━━━━━╮
+∴┰── %me ─┄➤ ↶×͜×↷*⎠
+∴┃⃝〲 *Tersisa* _%limit Limit_
+∴┃⃝〲 *Role* _%role_
+∴┃⃝〲 *Level* _%level (%exp / %maxexp)_
+∴┃⃝〲 _[%xp4levelup]_
+∴┃⃝〲 _%totalexp_ *XP secara Total*
+∴┃ 
+∴┃⃝〲 *Hari* : _%week %weton_ 
+∴┃⃝〲 *Tanggal* : _%date_
+∴┃⃝〲 *Tanggal Islam* : 
+∴┃⃝〲 _%dateIslamic_
+∴┃⃝〲 *Waktu* : _%time_
+∴┃
+∴┃⃝〲 Chat Owner ✉️
+∴┃⃝〲 klo mw add bot ke grup ☺ !
+∴┃⃝〲 *Uptime* : _%uptime (%muptime)_
+∴┃⃝〲 *Database* : _%rtotalreg dari %totalreg_
+∴┃⃝〲 *Github* : 
+∴┃   bit.ly/githubkyura
+∴┃⃝〲 *Youtube* : 
+∴┃   bit.ly/youtubekyura
+∴╰┄━━━━┄➤`.trimStart(),
+  header: '╭━━❰❬｢*%category*｣❭❱━┄➤',
+  body: '┃⃝〲%cmd %islimit %isPremium',
+  footer: '╰━━┄➤\n',
   after: `
 *KyuraBot*
 _Recode Oleh : Kyura_
@@ -235,8 +238,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
         "listMessage": {
           "title": `${ucapan()}, ${name}`.trim(),
           "description": `
-┏━━〔 Status 〕━⬣
-┃⬡ Aktif selama _${uptime}_
+╭┄━❰❬｢ Status ｣❭❱━┄⬣
+┊⬡ Aktif selama _${uptime}_
 ┃⬡ Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
 ┃⬡ *${Object.keys(global.db.data.users).length}* Pengguna
 ┃⬡ *${totaljadibot.length}* Jadibot
@@ -245,8 +248,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 ┃⬡ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
 ┃
 ┃⬡ Group Official:
-┃   ${gc1}
-┗━━━━━━━━⬣`.trim(),
+┊   ${gc1}
+╰┄━━━━━━┄➤`.trim(),
           "buttonText": "Menu Disini",
           "listType": "SINGLE_SELECT",
           "sections": [
@@ -377,7 +380,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     }
     // gunakan ini jika kamu menggunakan whatsapp bisnis
     //   throw `
-    // ┌〔 DAFTAR MENU 〕
+    // ╭❰❬｢ DAFTAR MENU ｣❭❱
     // ├ ${_p + command} all
     // ├ ${_p + command} game
     // ├ ${_p + command} xp
@@ -401,7 +404,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     // ├ ${_p + command} info
     // ├ ${_p + command} tanpa kategori
     // ├ ${_p + command} owner
-    // └────  
+    // ╰┄───𒅒°°°°°°𒅒┄➤  
     //     `.trim()
     let groups = {}
     for (let tag in tags) {
