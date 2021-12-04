@@ -8,39 +8,41 @@ const chats = conn.chats.all()
 const groups = chats.filter(v => v.jid.endsWith('g.us'))
 const defaultMenu = {
   before: `
-╭══◈›ꪶ ཻུ۪۪ꦽꦼ̷⸙▁▂×̐̈̐̈͜×̐̈▂▁ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹◈══╮
-╟┄┅╼━━❰❬｢*KyuraBot [2]*｣❭❱━━╾┅┄╢
-╰══◈›ꪶ ཻུ۪۪ꦽꦼ̷⸙▁×̐̈̐̈͜×̐̈▁ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹◈══╯
-╭•͙✩̣̣̣̣ Hai, *%name!*┄─✩̣̣̣̣
-┷━━━━━━━━━━━━━━━━╮
-∴┰── %me ─┄➤ ⎠↶×͜×↷*
-∴┃⃝〲 *Tersisa* _%limit Limit_
-∴┃⃝〲 *Role* _%role_
-∴┃⃝〲 *Level* _%level (%exp / %maxexp)_
-∴┃⃝〲 _[%xp4levelup]_
-∴┃⃝〲 _%totalexp_ *XP secara Total*
+╠╣ᵃⁱ ᵔᴥᵔ
+««ะ๏ຼົะ──卐.︽။⸽༒⸽။︽.卐──ะ๏ຼົะ»»
+«⦕卐⸽︼⸽︻❳❲«PikBotz[2]»❳❲︻⸽︼⸽卐⦖»
+⸙卐⸽︻⸽︻⸽︻⸽︼❳❲«»❳❲︼⸽︻⸽︻⸽︻⸽卐⸙
+✶╭┳ Hai, *%name!*✪➽╤───➛
+✶╰━╦──────➛
+︻𝒜𝓃⃢𝑜⃢𝓃⃢𝓎⃢𝓂⃢𝑜⃢𝓊⃢𝓈⃢⟧ཌ๏•••••••••••••ะ๏ຼົะ
+┰── %me ─┄➤ ⎠↶×͜×↷*
+⃝〲𐄪 *Tersisa* _%limit Limit_
+⃝〲𐄪 *Role* _%role_
+⃝〲𐄪 *Level* _%level (%exp / %maxexp)_
+⃝〲𐄪 _[%xp4levelup]_
+⃝〲𐄪 _%totalexp_ *XP secara Total*
 ∴┃ 
-∴┃⃝〲 *Hari* : _%week %weton_ 
-∴┃⃝〲 *Tanggal* : _%date_
-∴┃⃝〲 *Tanggal Islam* : 
-∴┃⃝〲 _%dateIslamic_
-∴┃⃝〲 *Waktu* : _%time_
+⃝〲𐄪 *Hari* : _%week %weton_ 
+⃝〲𐄪 *Tanggal* : _%date_
+⃝〲𐄪 *Tanggal Islam* : 
+⃝〲𐄪 _%dateIslamic_
+⃝〲𐄪 *Waktu* : _%time_
 ∴┃
-∴┃⃝〲 Chat Owner ✉️
-∴┃⃝〲 klo mw add bot ke grup ☺ !
-∴┃⃝〲 *Uptime* : _%uptime (%muptime)_
-∴┃⃝〲 *Database* : _%rtotalreg dari %totalreg_
-∴┃⃝〲 *Github* : 
+⃝〲𐄪 Chat Owner ✉️
+⃝〲𐄪 klo mw add bot ke grup ☺ !
+⃝〲𐄪 *Uptime* : _%uptime (%muptime)_
+⃝〲𐄪 *Database* : _%rtotalreg dari %totalreg_
+⃝〲𐄪 *Github* : 
 ∴┃   bit.ly/githubkyura
-∴┃⃝〲 *Youtube* : 
+⃝〲𐄪 *Youtube* : 
 ∴┃   bit.ly/youtubekyura
 ∴╰┄━━━━┄➤`.trimStart(),
-  header: '╭━━❰❬｢*%category*｣❭❱━┄➤',
-  body: '┃⃝〲%cmd %islimit %isPremium',
-  footer: '╰━━┄➤\n',
+  header: '╭━➽╤─｢*%category*｣──➛',
+  body: '〲𐄪 %cmd %islimit %isPremium',
+  footer: '╰━➽╤───➛\n',
   after: `
 *KyuraBot*
-_Recode Oleh : Kyura_
+_Recode Oleh : Taufiq_
 _SourceCode Ori By Nurutomo_
 `,
 }
@@ -238,29 +240,28 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
         "listMessage": {
           "title": `${ucapan()}, ${name}`.trim(),
           "description": `
-╭┄━❰❬｢ Status ｣❭❱━┄⬣
-┊⬡ Aktif selama _${uptime}_
-┃⬡ Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-┃⬡ *${Object.keys(global.db.data.users).length}* Pengguna
-┃⬡ *${totaljadibot.length}* Jadibot
-┃⬡ *${conn.blocklist.length}* Terblock
-┃⬡ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
-┃⬡ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
+╭«⦕卐⸽︼⸽︻❳❲« Status »❳❲︻⸽︼⸽卐⦖»
+⃝〲↳ Aktif selama _${uptime}_
+⃝〲↳ Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
+⃝〲↳ *${Object.keys(global.db.data.users).length}* Pengguna
+⃝〲↳ *${totaljadibot.length}* Jadibot
+⃝〲↳ *${conn.blocklist.length}* Terblock
+⃝〲↳ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
 ┃
-┃⬡ Group Official:
+⃝〲↳ Group Official:
 ┊   ${gc1}
-╰┄━━━━━━┄➤`.trim(),
+╰┄━➽╤───➛`.trim(),
           "buttonText": "Menu Disini",
           "listType": "SINGLE_SELECT",
           "sections": [
             {
               "rows": [
                 {
-                  "title": `[🧾] Semua Perintah`,
+                  "title": `[圓] Semua Perintah`,
                   "description": "Memberikan Semua Fitur Bot",
                   "rowId": ".? all"
                 }, {
-                  "title": "[🕋] Islam",
+                  "title": "[ﷻ] Islam",
                   "description": "Menu Tentang Islam",
                   "rowId": ".? quran"
                 }, {
@@ -272,7 +273,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "description": "Menu Berita",
                   "rowId": ".? News"
                 },  {
-                  "title": "[🎮] Game",
+                  "title": "[⚒] Game",
                   "description": "Menu Game",
                   "rowId": ".? game"
                 }, {
@@ -316,8 +317,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "description": "Cari Sesuatu Di Bot",
                   "rowId": ".? internet"
                 }, {
-                  "title": "[🥷] Anonymous",
-                  "description": "Mainkan Anonymous Chat",
+                  "title": "[⃠] Anonymous",
+                  "description": "M⃠a⃠i⃠n⃠k⃠a⃠n⃠ A⃠n⃠o⃠n⃠y⃠m⃠o⃠u⃠s⃠ C⃠h⃠a⃠t⃠",
                   "rowId": ".? anonymous"
                 }, {
                   "title": "[✒️] Nulis & Logo",
@@ -332,7 +333,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "description": "Tools Yang Bisa di Gunakan Di Bot",
                   "rowId": ".? tools"
                 }, {
-                  "title": "[🎇] Fun",
+                  "title": "[😺] Fun",
                   "description": "Menu Ceria",
                   "rowId": ".? fun"
                 }, {
@@ -344,7 +345,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "description": "Menu Vote & Absen",
                   "rowId": ".? vote"
                 }, {
-                  "title": "[🎙️] Pengubah Suara",
+                  "title": "[♬] Pengubah Suara",
                   "description": "Ubah Suaramu",
                   "rowId": ".? audio"
                 }, {
@@ -356,15 +357,15 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "description": "Cari Anime Di Bot",
                   "rowId": ".? anime"
                 }, {
-                  "title": "[ℹ️] Info",
+                  "title": "[❗] Info",
                   "description": "Info Tentang Bot",
                   "rowId": ".? info"
                 }, {
                   "title": "Tanpa Kategori",
-                  "description": "",
+                  "description": "⚠",
                   "rowId": ".? tanpakategori"
                 }, {
-                  "title": "[🧑‍💻] Owner",
+                  "title": "[𓁷] Owner",
                   "description": "Menu Khusu Owner",
                   "rowId": ".? owner"
                 }
@@ -380,31 +381,31 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     }
     // gunakan ini jika kamu menggunakan whatsapp bisnis
     //   throw `
-    // ╭❰❬｢ DAFTAR MENU ｣❭❱
-    // ├ ${_p + command} all
-    // ├ ${_p + command} game
-    // ├ ${_p + command} xp
-    // ├ ${_p + command} stiker
-    // ├ ${_p + command} kerang
-    // ├ ${_p + command} quotes
-    // ├ ${_p + command} admin
-    // ├ ${_p + command} group
-    // ├ ${_p + command} premium
-    // ├ ${_p + command} internet
-    // ├ ${_p + command} anonymous
-    // ├ ${_p + command} nulis
-    // ├ ${_p + command} downloader
-    // ├ ${_p + command} tools
-    // ├ ${_p + command} fun
-    // ├ ${_p + command} database
-    // ├ ${_p + command} vote
-    // ├ ${_p + command} quran
-    // ├ ${_p + command} audio
-    // ├ ${_p + command} jadibot
-    // ├ ${_p + command} info
-    // ├ ${_p + command} tanpa kategori
-    // ├ ${_p + command} owner
-    // ╰┄───𒅒°°°°°°𒅒┄➤  
+    // ╭«⦕卐⸽︼⸽︻❳❲«DAFTAR MENU»❳❲︻⸽︼⸽卐⦖»
+    // ⃝〲↳ ${_p + command} all
+    // ⃝〲↳ ${_p + command} game
+    // ⃝〲↳ ${_p + command} xp
+    // ⃝〲↳ ${_p + command} stiker
+    // ⃝〲↳ ${_p + command} kerang
+    // ⃝〲↳ ${_p + command} quotes
+    // ⃝〲↳ ${_p + command} admin
+    // ⃝〲↳ ${_p + command} group
+    // ⃝〲↳ ${_p + command} premium
+    // ⃝〲↳ ${_p + command} internet
+    // ⃝〲↳ ${_p + command} anonymous
+    // ⃝〲↳ ${_p + command} nulis
+    // ⃝〲↳ ${_p + command} downloader
+    // ⃝〲↳ ${_p + command} tools
+    // ⃝〲↳ ${_p + command} fun
+    // ⃝〲↳ ${_p + command} database
+    // ⃝〲↳ ${_p + command} vote
+    // ⃝〲↳ ${_p + command} quran
+    // ⃝〲↳ ${_p + command} audio
+    // ⃝〲↳ ${_p + command} jadibot
+    // ⃝〲↳ ${_p + command} info
+    // ⃝〲↳ ${_p + command} tanpa kategori
+    // ⃝〲↳ ${_p + command} owner
+    // ╰┄───𒅒°°°°°°𒅒┄──➛ 
     //     `.trim()
     let groups = {}
     for (let tag in tags) {
