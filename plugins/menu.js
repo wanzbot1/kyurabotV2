@@ -8,12 +8,9 @@ const chats = conn.chats.all()
 const groups = chats.filter(v => v.jid.endsWith('g.us'))
 const defaultMenu = {
   before: `
-╭══◈›ꪶ ཻུ۪۪ꦽꦼ̷⸙▁▂×̐̈̐̈͜×̐̈▂▁ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹◈══╮
-╟┄┅╼━━❰❬｢*KyuraBot [2]*｣❭❱━━╾┅┄╢
-╰══◈›ꪶ ཻུ۪۪ꦽꦼ̷⸙▁▂×̐̈̐̈͜×̐̈▂▁ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹◈══╯
-╭•͙✩̣̣̣̣ Hai, *%name!*┄─✩̣̣̣̣
 ┷━━━━━━━━━━━━━━━━╮
-∴┰── %me ─┄➤ ↶×͜×↷*⎠
+∴┰── *%me* ─┄➤⎠
+∴┃⃝〲 Hai, %name!
 ∴┃⃝〲 *Tersisa* _%limit Limit_
 ∴┃⃝〲 *Role* _%role_
 ∴┃⃝〲 *Level* _%level (%exp / %maxexp)_
