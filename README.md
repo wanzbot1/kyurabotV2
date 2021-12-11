@@ -1,6 +1,8 @@
 # KyuraBotV2
 BOT WA RPG SIMPEL
 
+<img src="https://raw.githubusercontent.com/KyuraSaja/kyurabotV2/master/src/img1.png" alt="kyura-bot" width="128" height="128"/>
+</p>
 <a href="https://github.com/Dawnfrosty/Mike-bot/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Dawnfrosty/Mike-bot?label=Forks&color=blue&style=flat-square"></a>
 <a href="https://github.com/Dawnfrosty/Mike-bot/watchers"><img title="Watchers" src="https://img.shields.io/github/watchers/Dawnfrosty/Mike-bot?label=Watchers&color=green&style=flat-square"></a>
 <a href="https://github.com/Dawnfrosty/Mike-bot/stargazers"><img title="Stars" src="https://img.shields.io/github/stars/Dawnfrosty/Mike-bot?label=Stars&color=yellow&style=flat-square"></a>
