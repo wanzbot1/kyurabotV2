@@ -23,16 +23,14 @@ const defaultMenu = {
 ∴┃⃝〲 _%dateIslamic_
 ∴┃⃝〲 *Waktu* : _%time_
 ∴┃
-∴┃⃝〲 Chat Owner ✉️
-∴┃⃝〲 klo mw add bot ke grup ☺ !
 ∴┃⃝〲 *Uptime* : _%uptime (%muptime)_
 ∴┃⃝〲 *Database* : _%rtotalreg dari %totalreg_
 ∴┃⃝〲 *Github* : 
 ∴┃   bit.ly/githubkyura
 ∴┃⃝〲 *Youtube* : 
 ∴┃   bit.ly/youtubekyura
-∴┃   Source Code :
-∴┃   github.com/KyuraSaja/kyurabotV2∴┃
+∴┃⃝〲 *Source Code* :
+∴┃   github.com/KyuraSaja/kyurabotV2
 ∴╰┄━━━━┄➤`.trimStart(),
   header: '╭━━❰❬｢*%category*｣❭❱━┄➤',
   body: '┃⃝〲%cmd %islimit %isPremium',
