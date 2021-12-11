@@ -1,5 +1,5 @@
-# Mike-bot
-Simple Rpg WhatsApp Bot Mike-bot
+# KyuraBotV2
+BOT WA RPG SIMPEL
 
 <a href="https://github.com/Dawnfrosty/Mike-bot/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Dawnfrosty/Mike-bot?label=Forks&color=blue&style=flat-square"></a>
 <a href="https://github.com/Dawnfrosty/Mike-bot/watchers"><img title="Watchers" src="https://img.shields.io/github/watchers/Dawnfrosty/Mike-bot?label=Watchers&color=green&style=flat-square"></a>
@@ -24,10 +24,7 @@ Heroku Buildpack
 | **FFMPEG** |[here](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest) |
 | **IMAGEMAGICK** | [here](https://github.com/DuckyTeam/heroku-buildpack-imagemagick) |
 
-Tutorial YouTube
-
-[![YouTube](https://img.shields.io/badge/YouTube-Video-red)](https://youtu.be/DzNIL45qHaM)
-## FOR TERMUX/UBUNTU/SSH USER
+## RUN DI TERMUX/UBUNTU/SSH USER
 
 ```bash
 apt update && apt upgrade
@@ -35,8 +32,8 @@ apt install git -y
 apt install nodejs -y
 apt install ffmpeg -y
 apt install imagemagick -y
-git clone https://github.com/Dawnfrosty/Mike-bot
-cd Mike-bot
+git clone https://github.com/KyuraSaja/kyurabotV2
+cd kyurabotV2
 npm install
 npm update
 ```
@@ -50,8 +47,8 @@ npm update
 * Download And Install ImageMagick [`Click Here`](https://imagemagick.org/script/download.php)
 
 ```bash
-git clone https://github.com/Dawnfrosty/Mike-bot
-cd Mike-bot
+git clone https://github.com/KyuraSaja/kyurabotV2
+cd kyurabotV2
 npm install
 npm update
 ```
