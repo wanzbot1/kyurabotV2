@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://raw.githubusercontent.com/KyuraSaja/kyurabotV2/master/src/img1.png" alt="KYURA BOT" width="1080" height="1080"/>
+<img src="https://raw.githubusercontent.com/KyuraSaja/kyurabotV2/master/src/img1.png" alt="KYURA BOT" width="256" height="256"/>
 </p> 
 <p align="center">
 <a href="#"><img title="Kyura BOT" src="https://img.shields.io/badge/kyura bot-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
