@@ -31,6 +31,8 @@ const defaultMenu = {
 ∴┃   bit.ly/githubkyura
 ∴┃⃝〲 *Youtube* : 
 ∴┃   bit.ly/youtubekyura
+∴┃   Source Code :
+∴┃   github.com/KyuraSaja/kyurabotV2∴┃
 ∴╰┄━━━━┄➤`.trimStart(),
   header: '╭━━❰❬｢*%category*｣❭❱━┄➤',
   body: '┃⃝〲%cmd %islimit %isPremium',
