@@ -1,11 +1,11 @@
 <p align="center">
-<img src="https://raw.githubusercontent.com/KyuraSaja/kyurabotV2/master/src/img1.png" alt="KYURA BOT" width="128" height="128"/>
+<img src="https://raw.githubusercontent.com/KyuraSaja/kyurabotV2/master/src/img1.png" alt="KYURA BOT" width="1280" height="720"/>
 </p> 
 <p align="center">
 <a href="#"><img title="Kyura BOT" src="https://img.shields.io/badge/kyura bot-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
-<a href="https://github.com/nurutomo"><img title="Author" src="https://img.shields.io/badge/Author-nurutomo-red.svg?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/nurutomo"><img title="Author" src="https://img.shields.io/badge/Author-nurutomo-blue.svg?style=for-the-badge&logo=github"></a>
 </p>
 <a href="https://github.com/Dawnfrosty/Mike-bot/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Dawnfrosty/Mike-bot?label=Forks&color=blue&style=flat-square"></a>
 <a href="https://github.com/Dawnfrosty/Mike-bot/watchers"><img title="Watchers" src="https://img.shields.io/github/watchers/Dawnfrosty/Mike-bot?label=Watchers&color=green&style=flat-square"></a>
