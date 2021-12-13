@@ -55,7 +55,7 @@ namakontak2 = 'Ardhi'
 
 // Sticker WM
 global.packname = 'From' // ganti aja
-global.author = 'KanaoBot' // ganti aja
+global.author = 'KyuraBOT' // ganti aja
 
 //yyy
 bc = 'KanaoBOT' //RFK Broadcast
